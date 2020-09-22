@@ -30,9 +30,11 @@ inputs = browser.find_elements_by_class_name("step")
 if len(button)<2:
     print("没有找到输入框")
     browser.close()
-inputs[0].send_keys("13880311424")
+#手机号
+inputs[0].send_keys("*")
 # time.sleep(2)
-inputs[1].send_keys("tangfeng1234")
+#密码
+inputs[1].send_keys("*")
 # time.sleep(2)
 button = browser.find_elements_by_class_name("button")
 if len(button)==0:
